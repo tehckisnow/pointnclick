@@ -7,6 +7,13 @@
 //    exits
 //    events (what's an event?)
 
+//onclick event in inputmanager
+//collision mask
+//pathfinding
+//interactables
+//inventory
+//camera follow lag
+//test camera pan methods
 
 const engine = {
 
@@ -477,10 +484,6 @@ const engine = {
           if(newComponent.frame > newComponent.anims[newComponent.currentAnim].length - 1){
             newComponent.frame = 0;
           };
-
-          //!
-          engine.log(newComponent.currentAnim + " : " + newComponent.frame + " : " + newComponent.anims[newComponent.currentAnim][newComponent.frame]);
-
           newComponent.parent.render.sprite = newComponent.anims[newComponent.currentAnim][newComponent.frame];
         };
       };
